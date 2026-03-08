@@ -1,0 +1,138 @@
+.found-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #BBC9C9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.found-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    padding: 0 50px;
+    position: relative;
+}
+
+.found-image-box {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.found-flowers-img {
+    margin-left: 350px;
+    width: 400%;
+    height: 90vh;
+    object-fit: contain;
+}
+
+.found-right-side {
+    z-index: 2;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.found-title {
+    font-size: 300px;
+    font-weight: 900;
+    color: #8FA8A8;
+    line-height: 0.8;
+    margin: 0;
+}
+
+.found-subtitle {
+    font-size: 70px;
+    color: #274C5B;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.found-text {
+    font-size: 18px;
+    color: #525C60;
+    margin-bottom: 35px;
+}
+
+.found-btn {
+    background-color: #274C5B;
+    color: #ffffff;
+    padding: 22px 50px;
+    border-radius: 16px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.found-btn:hover {
+    background-color: #335b6d;
+    box-shadow: 0 10px 25px rgba(39, 76, 91, 0.2);
+}
+
+@media (max-width: 992px) {
+    .found-content-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .found-image-box {
+        position: relative;
+        width: 100%;
+        transform: none;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .found-flowers-img {
+       display: none;
+    }
+
+    .found-right-side {
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .found-title {
+        font-size: 150px;
+    }
+
+    .found-subtitle {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .found-title {
+        font-size: 100px;
+    }
+
+    .found-subtitle {
+        font-size: 32px;
+    }
+
+    .found-btn {
+        width: 100%;
+        padding: 18px;
+        font-size: 16px;
+    }
+}

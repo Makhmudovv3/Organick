@@ -1,0 +1,245 @@
+.header-main {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.header-logo img {
+    width: 34px;
+}
+
+.header-logo span {
+    font-size: 30px;
+    font-weight: 800;
+    color: #274C5B;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    align-items: center;
+}
+
+.header-nav a,
+.dropdown-trigger {
+    font-size: 18px;
+    font-weight: 700;
+    color: #274C5B;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.header-dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #F9F8F8;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 20px !important;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header-search-bar input {
+    background: #FAFAFA;
+    border: none;
+    border-radius: 36px;
+    padding: 14px 20px;
+    width: 250px;
+    outline: none;
+}
+
+.header-search-icon {
+    position: absolute;
+    right: 6px;
+    background-color: #7EB12D;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header-cart {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #E0E0E0;
+    padding: 5px 15px 5px 5px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.header-cart-icon {
+    background-color: #274C5B;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-cart-text {
+    font-weight: 700;
+    font-size: 16px;
+    color: #274C5B;
+}
+
+.header-hamburger {
+    display: none;
+    background: none;
+    border: none;
+}
+
+@media (max-width: 1100px) {
+    .header-search-bar {
+        display: none;
+    }
+
+    .header-nav ul {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .header-main {
+        padding: 20px 0;
+    }
+
+    .header-hamburger {
+        display: block;
+    }
+
+    .header-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.4s ease;
+    }
+
+    .header-nav-active {
+        max-height: 100vh;
+        padding-bottom: 20px;
+    }
+
+    .header-nav ul {
+        flex-direction: column;
+        padding: 30px;
+        gap: 15px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none !important;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: #F9F8F8;
+        width: 100%;
+        padding: 10px 0 !important;
+        margin-top: 10px;
+    }
+
+    .dropdown-menu.show {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .header-cart-text {
+        display: none;
+    }
+
+    .header-cart {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-logo span {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 330px) {
+    .header-container {
+        padding: 0 10px;
+    }
+
+    .header-logo img {
+        width: 28px;
+    }
+
+    .header-logo span {
+        font-size: 18px;
+    }
+
+    .header-actions {
+        gap: 10px;
+    }
+}

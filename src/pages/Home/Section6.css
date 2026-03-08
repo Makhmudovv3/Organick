@@ -1,0 +1,149 @@
+.section6-main {
+    width: 100%;
+    padding: 150px 0;
+    background-color: #274C5B;
+}
+
+.section6-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.section6-subtitle {
+    font-family: 'Yellowtail', cursive;
+    font-size: 36px;
+    color: #7EB12D;
+}
+
+.section6-title {
+    font-size: 50px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.section6-btn {
+    background-color: #EFD372;
+    color: #274C5B;
+    border: none;
+    padding: 24px 40px;
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.section6-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.section6-card {
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+}
+
+.section6-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #274C5B;
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.section6-image {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section6-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.section6-name {
+    font-size: 18px;
+    font-weight: 800;
+    color: #274C5B;
+    margin: 15px 0 10px;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 10px;
+}
+
+.section6-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section6-old {
+    font-size: 14px;
+    color: #B8B8B8;
+    text-decoration: line-through;
+    margin-right: 7px;
+}
+
+.section6-current {
+    font-size: 17px;
+    font-weight: 700;
+    color: #274C5B;
+}
+
+/* Media Queries (To'g'irlangan) */
+
+@media (max-width: 1200px) {
+    .section6-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section6-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section6-main {
+        padding: 80px 0;
+    }
+
+    .section6-title {
+        font-size: 36px;
+    }
+
+    .section6-subtitle {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    .section6-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 330px) {
+    .section6-title {
+        font-size: 26px;
+    }
+
+    .section6-btn {
+        padding: 18px 25px;
+        font-size: 14px;
+    }
+}

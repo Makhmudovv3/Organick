@@ -1,0 +1,116 @@
+.prot-page {
+    background-color: #fff;
+    padding-bottom: 140px;
+}
+
+.prot-header {
+    background-image: url("../../assets/licenses-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 298px;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+
+}
+
+.prot-header h1 {
+    font-size: 55px;
+    color: #274C5B;
+    font-weight: 800;
+}
+
+.prot-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 39px 37px 0px #C3C3C340;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 50px;
+}
+
+.prot-img-side {
+    flex: 1;
+}
+
+.prot-img-side img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.prot-form-side {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+
+.prot-form-side label {
+    font-size: 18px;
+    color: #274C5B;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.prot-form-side input {
+    width: 100%;
+    padding: 25px 30px;
+    border: 1px solid #7EB693;
+    border-radius: 16px;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.prot-btn {
+    background-color: #274C5B;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 16px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content;
+    transition: 0.3s;
+}
+
+.prot-btn:hover {
+    background-color: #335b6d;
+}
+
+@media (max-width: 768px) {
+    .prot-header h1 {
+        font-size: 40px;
+    }
+
+    .prot-card {
+        flex-direction: column;
+        padding: 30px;
+        gap: 30px;
+        margin: 0 20px;
+    }
+
+    .prot-img-side {
+        width: 100%;
+    }
+
+    .prot-form-side {
+        width: 100%;
+    }
+
+    .prot-btn {
+        width: 100%;
+    }
+}

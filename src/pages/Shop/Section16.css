@@ -1,0 +1,116 @@
+.section16-main {
+    padding: 100px 0;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.section16-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 20px;
+}
+
+.section16-card {
+    background: #F9F8F8;
+    border-radius: 30px;
+    padding: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.section16-card:hover {
+    background: #ffffff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    transform: translateY(-5px);
+}
+
+.section16-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #274C5B;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.section16-img-box {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section16-img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.section16-info h4 {
+    font-size: 20px;
+    color: #274C5B;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.section16-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #E0E0E0;
+    padding-top: 15px;
+}
+
+.section16-prices .section16-old {
+    font-size: 15px;
+    color: #B8B8B8;
+    text-decoration: line-through;
+    margin-right: 8px;
+}
+
+.section16-prices .section16-new {
+    font-size: 18px;
+    color: #274C5B;
+    font-weight: 700;
+}
+
+.section16-stars {
+    color: #FFA858;
+    font-size: 18px;
+}
+
+
+@media (max-width: 1200px) {
+    .section16-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .section16-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 580px) {
+    .section16-main {
+        padding: 60px 0;
+    }
+
+    .section16-grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .section16-img-box {
+        height: 250px;
+    }
+}

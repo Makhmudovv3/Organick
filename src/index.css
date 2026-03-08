@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Yellowtail&display=swap');
+
+:root {
+  --primary-color: #274C5B;
+  --secondary-color: #7EB12D;
+  --accent-color: #EFD372;
+  --text-grey: #525C60;
+  --white: #FFFFFF;
+  --bg-creamy: #F9F8F8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-color);
+  background-color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}

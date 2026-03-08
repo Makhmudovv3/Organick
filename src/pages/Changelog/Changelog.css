@@ -1,0 +1,133 @@
+.change-page {
+    background-color: #fff;
+    padding-bottom: 140px;
+}
+
+.change-header {
+    height: 298px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    background-color: #FAFAFA;
+}
+
+.change-header h1 {
+    font-size: 70px;
+    color: #274C5B;
+    font-weight: 800;
+}
+
+.change-card {
+    max-width: 700px;
+    height: 216px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 39px 37px 0px #C3C3C340;
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-version-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.change-icon {
+    width: 164px;
+    height: 164px;
+    object-fit: contain;
+}
+
+.change-text-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.change-text-group h2 {
+    font-size: 30px;
+    color: #274C5B;
+    font-weight: 800;
+    margin: 0;
+}
+
+.change-text-group p {
+    font-size: 18px;
+    color: #525C60;
+    margin: 0;
+    font-weight: 400;
+}
+
+
+@media (max-width: 768px) {
+    .change-header {
+        height: 200px;
+        margin-bottom: 60px;
+    }
+
+    .change-header h1 {
+        font-size: 45px;
+    }
+
+    .change-card {
+        height: auto;
+        max-width: 90%;
+        padding: 30px 20px;
+    }
+
+    .change-version-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .change-icon {
+        width: 120px;
+        height: 120px;
+    }
+
+    .change-text-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .change-text-group h2 {
+        font-size: 28px;
+    }
+
+    .change-text-group p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .change-header {
+        height: 160px;
+    }
+
+    .change-header h1 {
+        font-size: 32px;
+    }
+
+    .change-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .change-card {
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .change-text-group h2 {
+        font-size: 24px;
+    }
+}

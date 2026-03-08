@@ -1,0 +1,135 @@
+.offers-section {
+    width: 100%;
+    padding: 100px 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.offer-card {
+    width: 100%;
+    height: 367px;
+    border-radius: 30px;
+    padding: 65px 55px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.natural-card {
+    background-image: url('../../assets/offer-bg-1.webp');
+}
+
+.offer-card-green {
+    background-image: url('../../assets/offer-bg-2.webp');
+}
+
+.offer-subtitle {
+    font-family: 'Yellowtail', cursive;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.text-green {
+    color: #7EB12D;
+}
+
+.offer-title {
+    font-size: 40px;
+    font-weight: 800;
+    color: #ffffff;
+    max-width: 280px;
+    line-height: 1.2;
+}
+
+.text-dark {
+    color: #274C5B;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 50px;
+    }
+
+    .offer-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .offers-section {
+        padding: 60px 0;
+    }
+
+    .offer-card {
+        padding: 40px;
+        height: 300px;
+    }
+
+    .offer-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .offers-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .offer-card {
+        height: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .offer-card {
+        padding: 30px;
+        height: 280px;
+    }
+
+    .offer-subtitle {
+        font-size: 30px;
+    }
+
+    .offer-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 330px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .offer-card {
+        padding: 25px 20px;
+        height: 250px;
+    }
+
+    .offer-subtitle {
+        font-size: 26px;
+    }
+
+    .offer-title {
+        font-size: 24px;
+        max-width: 200px;
+    }
+}

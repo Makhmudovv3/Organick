@@ -1,0 +1,137 @@
+.section8-main {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #F1F8F4;
+    overflow: hidden;
+}
+
+.section8-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section8-item {
+    flex: 1;
+    max-width: 612px;
+    height: 413px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.section8-juice {
+    background-image: url('../../assets/juice-bg.png');
+}
+
+.section8-food {
+    background-image: url('../../assets/food-bg.png');
+}
+
+.section8-cookies {
+    background-image: url('../../assets/cookies-bg.png');
+}
+
+.section8-label {
+    background-color: #ffffff;
+    padding: 25px 45px;
+    border-radius: 20px;
+    font-size: 22px;
+    font-weight: 800;
+    color: #274C5B;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    min-width: 200px;
+    z-index: 2;
+}
+
+.section8-item:hover .section8-label {
+    background-color: #274C5B;
+    color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+    .section8-grid {
+        gap: 20px;
+    }
+
+    .section8-item {
+        height: 350px;
+    }
+
+    .section8-label {
+        padding: 20px 35px;
+        font-size: 20px;
+        min-width: 180px;
+    }
+}
+
+@media (max-width: 992px) {
+    .section8-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section8-item {
+        flex: none;
+        width: calc(50% - 20px);
+        height: 380px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section8-main {
+        padding: 60px 0;
+    }
+
+    .section8-item {
+        width: 100%;
+        max-width: 500px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section8-grid {
+        gap: 25px;
+    }
+
+    .section8-item {
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    .section8-label {
+        padding: 15px 25px;
+        font-size: 18px;
+        min-width: 160px;
+    }
+}
+
+@media (max-width: 330px) {
+    .section8-main {
+        padding: 40px 0;
+    }
+
+    .section8-item {
+        height: 250px;
+    }
+
+    .section8-label {
+        padding: 12px 20px;
+        font-size: 16px;
+        min-width: 140px;
+    }
+}
