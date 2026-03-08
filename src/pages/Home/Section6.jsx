@@ -2,11 +2,16 @@ import React from 'react';
 import './Section6.css';
 import star from '../../assets/star.png';
 
+import product9 from '../../assets/product-9.png';
+import product10 from '../../assets/product-10.png';
+import product11 from '../../assets/product-11.png';
+import product12 from '../../assets/product-12.png';
+
 const offerProducts = [
-    { id: 1, tag: 'Vegetable', name: 'Mung Bean', price: '$11.00', oldPrice: '$20.00', img: 'product-9.png' },
-    { id: 2, tag: 'Vegetable', name: 'Brown Hazelnut', price: '$12.00', oldPrice: '$20.00', img: 'product-10.png' },
-    { id: 3, tag: 'Vegetable', name: 'Onion', price: '$17.00', oldPrice: '$20.00', img: 'product-11.png' },
-    { id: 4, tag: 'Vegetable', name: 'Cabbage', price: '$17.00', oldPrice: '$20.00', img: 'product-12.png' }
+    { id: 1, tag: 'Vegetable', name: 'Mung Bean', price: '$11.00', oldPrice: '$20.00', img: product9 },
+    { id: 2, tag: 'Vegetable', name: 'Brown Hazelnut', price: '$12.00', oldPrice: '$20.00', img: product10 },
+    { id: 3, tag: 'Vegetable', name: 'Onion', price: '$17.00', oldPrice: '$20.00', img: product11 },
+    { id: 4, tag: 'Vegetable', name: 'Cabbage', price: '$17.00', oldPrice: '$20.00', img: product12 }
 ];
 
 const Section6 = () => {
@@ -34,7 +39,7 @@ const Section6 = () => {
                         <div key={item.id} className="section6-card">
                             <span className="section6-tag">{item.tag}</span>
                             <div className="section6-image">
-                                <img src={`/src/assets/${item.img}`} alt={item.name} />
+                                <img src={item.img} alt={item.name} />
                             </div>
                             <div className="section6-info">
                                 <h4 className="section6-name">{item.name}</h4>
