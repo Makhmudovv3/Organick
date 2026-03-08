@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { FaInstagram, FaFacebook, FaTwitter, FaPinterest } from 'react-icons/fa';
-import logo from "../../assets/logo.webp"
+import logo from "../../assets/Logo.webp"
 
 const Footer = () => {
     return (
